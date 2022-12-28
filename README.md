@@ -15,6 +15,7 @@ source /opt/ros/version-name/setup.bash
 <details>
 <summary>click to view the files' structure</summary>
 
+````
 ros2_ws/
     build/
        ...
@@ -30,7 +31,7 @@ ros2_ws/
         package_1/
         package_2/
            ...
-           
+````
 </details>
 
 <details>
