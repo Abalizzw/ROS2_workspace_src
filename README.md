@@ -3,7 +3,7 @@ ROS2 basic tutorial which following the Kyoto Univ.'s lecture.
 http://lab3.kuis.kyoto-u.ac.jp/~takase/ros/4dashing.pdf
 
 #### Debug record
-[Debug](アトラクション)
+[Debug](debug.md)
 
 #### Environment setting
 
@@ -13,7 +13,7 @@ source /opt/ros/version-name/setup.bash
 #### Workspace structure
 
 <details>
-<summary>click to view the files' structure</summary>
+<summary>click to view the directories' structure</summary>
 
 ````
 ros2_ws/
