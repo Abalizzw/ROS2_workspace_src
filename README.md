@@ -50,7 +50,7 @@ source install/local_setup.bash
 ```
 
 # Contents
-[Topic](#topic)  / [Message](#message) / [Service](#service) / [Launch](#launch) / [Action](#action) / [Component](#component)
+[Topic](#topic)  / [Message](#message) / [Service](#service) / [Launch](#launch) / [Action](#action) / [Component](#component) / [Parameters](#parameters)
 ---
 
 <span id='topic'/>  
@@ -171,9 +171,53 @@ Coming soon...
 [Back to contents](#contents)
 
 ## Action
-Coming soon...  
+Create an action file in ` cd ros_study_types/action` and paste belowing contents and save as `Fibonacci.action`:
+```
+int32 order
+---
+int32[] sequence
+---
+int32[] sequence
+```
+
+Build the package `ros_study_types`:
+```
+cd ~/ros2_ws
+colcon build --packages-select ros_study_types
+```
+
+Create the action package `action_costum`:
+```
+cd ~/ros2_ws
+source install/local_setup.bash
+cd src/
+ros2 pkg create action_custom --dependencies rclcpp rclcpp_action ros_study_types
+```
+
+Build the package `action_costum`:
+```
+cd ~/ros2_ws
+colcon build --packages-select action_custom
+```
+
+Execute `server` in terminal 1:
+```
+. ~/ros2_ws/install/local_setup.bash
+ros2 run action_custom servier
+```
+
+Execute `client` in terminal 2:
+```
+. ~/ros2_ws/install/local_setup.bash
+ros2 run action_custom client
+```
+
 [Back to contents](#contents)
 
 ## Component
+Coming soon...  
+[Back to contents](#contents)
+
+## Parameters
 Coming soon...  
 [Back to contents](#contents)
