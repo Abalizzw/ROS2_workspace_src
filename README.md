@@ -49,7 +49,7 @@ colcon build
 source install/local_setup.bash
 ```
 
-# ROS2 Contents
+# Contents
 [Topic](#topic)  / [Message](#message) / [Service](#service) / [Action](#action) / [Component](#component) / [Parameters](#parameters) / [Launch](#launch)
 ---
 
